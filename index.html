@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Palace - Order Your Delicious Pizza</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .pizza-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .pizza-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .pizza-choices {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .pizza-choice {
+            padding: 10px;
+            border: 1px solid white;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .toppings {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .topping {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+
+        .order-summary {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .payment-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .payment-input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .success-message {
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizza Palace</h1>
+
+    <div class="pizza-container">
+        <img src="pizza.jpg" class="pizza-image" alt="Pizza">
+    </div>
+
+    <div class="pizza-choices">
+        <div class="pizza-choice active">Small Pizza ($5)</div>
+        <div class="pizza-choice">Medium Pizza ($8)</div>
+        <div class="pizza-choice">Large Pizza ($12)</div>
+    
